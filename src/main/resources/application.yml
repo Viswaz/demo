@@ -1,0 +1,26 @@
+logging:
+  level:
+    org.springframework.boot: error
+    org.springframework.web: error
+    org.springframework.security: debug
+    com.example: debug
+    
+spring:
+  main:
+    banner-mode: "off"
+
+  security:
+    oauth2:
+      client:
+        registration:
+          okta:
+            clientId: 0oae2qba8bOAJymKa0h7
+            clientSecret: Wrm7XfYp1_itWTat446yBq3xRxtZ_XVzodXbt7RW
+        provider:
+          okta:
+            authorization-uri: https://dev-252708.oktapreview.com/oauth2/default/v1/authorize
+            token-uri: https://dev-252708.oktapreview.com/oauth2/default/v1/token
+            user-info-uri: https://dev-252708.oktapreview.com/oauth2/default/v1/userinfo
+            jwk-set-uri: https://dev-252708.oktapreview.com/oauth2/default/v1/keys
+            
+       
